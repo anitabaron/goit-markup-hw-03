@@ -41,7 +41,6 @@ ul {
     width: 1158px;
     outline: 2px solid red;
     justify-content: space-between;
-    align-content: space-between;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -54,15 +53,6 @@ section {
 
 .header-top {
     border-bottom: 1px solid #e7e9fc;
-}
-
-.container-navi {
-    display: flex;
-    width: 1158px;
-    margin: 0 auto;
-    justify-content: space-between;
-    outline: 2px solid green;
-    padding: 0 15px;
 }
 
 .portfolio-list {
@@ -112,15 +102,15 @@ section {
 .left-navi-list {
     display: flex;
     list-style: none;
-    padding: 0 15px;
     padding: 24px 0;
+    gap: 40px;
 }
 
 .right-navi-list {
     display: flex;
     list-style: none;
-    padding: 0 15px;
     padding: 24px 0;
+    gap: 40px;
 }
 
 .goals-columns {
@@ -187,6 +177,8 @@ section {
     text-transform: uppercase;
     text-decoration: none;
     margin-right: 76px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo .logo-dark {
@@ -232,6 +224,7 @@ section {
     text-align: center;
     max-width: 496px;
     margin: 0 auto;
+    display: block;
 }
 
 .text-bright {
@@ -249,9 +242,10 @@ section {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
-.header-titles-none {
+.visually-hidden {
     visibility: hidden;
 }
 .list-titles {
@@ -261,6 +255,7 @@ section {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .card {
@@ -269,8 +264,9 @@ section {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     height: 380px;
-    margin-top: 232px;
+    border-radius: 0px 0px 4px 4px;
     margin-bottom: 120px;
+    padding: 32px 16px;
 }
 
 ul p {
@@ -288,9 +284,11 @@ ul p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 
 .footer-background {
     background-color: #2e2f42;
     height: 312px;
+    padding: 100px 0;
 }
