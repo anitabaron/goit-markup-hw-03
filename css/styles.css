@@ -36,22 +36,32 @@ ul {
 
 .container {
     width: 1158px;
-    background-color: red;
+    /* outline: 2px solid red; */
     justify-content: space-between;
     align-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .navi {
     margin-top: 24px;
     margin-bottom: 24px;
+    border-bottom: 1px solid black;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+}
+
+.portfolio-list li {
+    border-bottom: 1px solid black;
 }
 
 .button-click {
@@ -78,20 +88,23 @@ ul {
     font-style: normal;
 }
 
+.navigation {
+    display: flex;
+}
+
 .left-navi-list {
+    display: flex;
     list-style: none;
 }
 
 .right-navi-list {
+    display: flex;
     list-style: none;
 }
 
 .goals-list {
     list-style: none;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
     gap: 24px;
     margin: 0;
     padding: 0;
@@ -179,6 +192,7 @@ ul {
 .blue-box {
     background-color: #2e2f42;
     height: 600px;
+    text-align: center;
 }
 
 .main-header {
@@ -193,6 +207,8 @@ ul {
 .text-bright {
     color: #f4f4fd;
     display: block;
+    flex-wrap: wrap;
+    width: 264px;
 }
 
 .header-titles {
@@ -219,6 +235,8 @@ ul {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     height: 380px;
+    margin-top: 232px;
+    margin-bottom: 120px;
 }
 
 ul p {
@@ -229,7 +247,6 @@ ul p {
 
 .team-background {
     background-color: #f4f4fd;
-    height: 732px;
 }
 
 .function {
