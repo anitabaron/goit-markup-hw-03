@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="description" content="Web studio company" />
         <title>Web Studio</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+        />
         <link rel="stylesheet" href="./css/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,15 +15,11 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-        />
     </head>
     <body>
-        <header>
+        <header class="header-top">
             <!--Left navi-->
-            <div class="container navi">
+            <div class="container-navi">
                 <nav class="navigation">
                     <a href="./index.html" class="logo"
                         >Web<span class="logo-dark">Studio</span></a
@@ -55,18 +55,19 @@
         <main>
             <!--Dark background - section 1-->
             <section class="blue-box">
-                <h1 class="main-header">
-                    Effective Solutions for Your Business
-                </h1>
-                <button type="button" class="button-click">
-                    Order Service
-                </button>
+                <div class="container">
+                    <h1 class="main-header">
+                        Effective Solutions for Your Business
+                    </h1>
+                    <button type="button" class="button-click">
+                        Order Service
+                    </button>
+                </div>
             </section>
-
             <!--List 4 columns - section 2-->
-            <div class="container">
-                <section>
-                    <h2 class="header-titles">4 columns</h2>
+            <section class="goals-columns">
+                <div class="container">
+                    <h2 class="header-titles-none">4 columns</h2>
                     <ul class="goals-list">
                         <li class="goals-item">
                             <h3 class="list-titles">Strategy</h3>
@@ -101,10 +102,11 @@
                             </p>
                         </li>
                     </ul>
-                </section>
-
-                <!--Team photo - section 3-->
-                <section class="team-background">
+                </div>
+            </section>
+            <!--Team photo - section 3-->
+            <section class="team-background">
+                <div class="container">
                     <h2 class="header-titles">Our Team</h2>
                     <ul class="person-list">
                         <li class="card">
@@ -148,10 +150,11 @@
                             <p class="function">UI Designer</p>
                         </li>
                     </ul>
-                </section>
-                <!--Our portfolio - section 4-->
-                <section>
-                    <!-- class="portfolio"> -->
+                </div>
+            </section>
+            <!--Our portfolio - section 4-->
+            <section class="portfolio-grid">
+                <div class="container">
                     <h2 class="header-titles">Our Portfolio</h2>
                     <ul class="portfolio-list">
                         <li>
@@ -215,12 +218,12 @@
                             <p class="description-text">Marketing</p>
                         </li>
                     </ul>
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
         <!--Dark end-->
-        <div class="container">
-            <footer class="footer-background">
+        <footer class="footer-background">
+            <div class="container">
                 <a href="./index.html" class="logo"
                     >Web<span class="logo-bright">Studio</span></a
                 >
@@ -228,7 +231,7 @@
                     Increase the flow of customers and sales for your business
                     with digital marketing & growth solutions.
                 </p>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </body>
 </html>

@@ -19,6 +19,9 @@ body {
     align-content: center;
 }
 
+img {
+    display: block;
+}
 h1,
 h2,
 h3,
@@ -36,7 +39,7 @@ ul {
 
 .container {
     width: 1158px;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
     justify-content: space-between;
     align-content: space-between;
     display: flex;
@@ -49,10 +52,17 @@ section {
     padding-bottom: 120px;
 }
 
-.navi {
-    margin-top: 24px;
-    margin-bottom: 24px;
-    border-bottom: 1px solid black;
+.header-top {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.container-navi {
+    display: flex;
+    width: 1158px;
+    margin: 0 auto;
+    justify-content: space-between;
+    outline: 2px solid green;
+    padding: 0 15px;
 }
 
 .portfolio-list {
@@ -60,8 +70,8 @@ section {
     flex-wrap: wrap;
 }
 
-.portfolio-list li {
-    border-bottom: 1px solid black;
+.portfolio-card {
+    border: 1px solid black;
 }
 
 .button-click {
@@ -73,6 +83,12 @@ section {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .button-click:hover,
@@ -90,16 +106,25 @@ section {
 
 .navigation {
     display: flex;
+    align-items: center;
 }
 
 .left-navi-list {
     display: flex;
     list-style: none;
+    padding: 0 15px;
+    padding: 24px 0;
 }
 
 .right-navi-list {
     display: flex;
     list-style: none;
+    padding: 0 15px;
+    padding: 24px 0;
+}
+
+.goals-columns {
+    padding: 120px 0;
 }
 
 .goals-list {
@@ -140,6 +165,7 @@ section {
     letter-spacing: 0.02em;
     text-decoration: none;
     font-style: normal;
+    margin-right: 40px;
 }
 
 .link:hover,
@@ -160,6 +186,7 @@ section {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    margin-right: 76px;
 }
 
 .logo .logo-dark {
@@ -178,6 +205,7 @@ section {
     font-style: normal;
     letter-spacing: 0.02em;
     text-decoration: none;
+    margin-right: 40px;
 }
 
 .contact-link:hover,
@@ -191,8 +219,8 @@ section {
 
 .blue-box {
     background-color: #2e2f42;
-    height: 600px;
     text-align: center;
+    padding: 188px 0;
 }
 
 .main-header {
@@ -202,6 +230,8 @@ section {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    max-width: 496px;
+    margin: 0 auto;
 }
 
 .text-bright {
@@ -221,12 +251,16 @@ section {
     text-transform: capitalize;
 }
 
+.header-titles-none {
+    visibility: hidden;
+}
 .list-titles {
     color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .card {
