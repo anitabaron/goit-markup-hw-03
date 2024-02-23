@@ -41,9 +41,13 @@ ul {
 }
 
 .container-header-wrap {
-    display: flex;
+    width: 1158px;
+    outline: 2px solid red;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 section {
@@ -55,6 +59,12 @@ section {
     border-bottom: 1px solid #e7e9fc;
 }
 
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -63,7 +73,13 @@ section {
 }
 
 .portfolio-card {
-    border: 1px solid black;
+    border: 1px solid #e7e9fc;
+    padding: 32px 16px;
+    border-top: none;
+}
+
+.description-text {
+    margin-bottom: 8px;
 }
 
 .button-click {
@@ -139,6 +155,7 @@ section {
     text-decoration: none;
     font-style: normal;
     margin-right: 40px;
+    padding: 24px 0;
 }
 
 .link:hover,
@@ -161,11 +178,15 @@ section {
     text-decoration: none;
     margin-right: 76px;
     display: flex;
-    /* margin-bottom: 16px; */
 }
 
 .logo .logo-dark {
     color: #2e2f42;
+}
+
+.logo-bottom {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo .logo-bright {
@@ -258,9 +279,7 @@ section {
 }
 
 .card {
-    /* margin-bottom: 120px; */
     padding: 32px 0;
-    /* width: calc((100%-72px) / 4); */
 }
 
 ul p {
